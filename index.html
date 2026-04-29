@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <!--
 ================================================================================
-DUALITY DROP-DOWN — V4 (Mindvalley brand · conversion-restructured)
+DUALITY DROP-DOWN — IDEAL VERSION (full expert-panel feedback applied)
 ================================================================================
 Built: 2026-04-29 · Author: Claude
+Part of: /Mindvalley_Master_Funnel/04-dropdown/
+Sister pages (next to build): 01-landing, 02-thank-you, 03-webinar, 05-special-offer, 06-checkout, 07-confirmation
 
 Brand fidelity:
   · Colors: #7a12d4 purple, #ff931f→#ed6325 orange CTA, #1d1d1f charcoal, #f9f7fc lavender
@@ -933,6 +935,61 @@ VALUES TO VERIFY:
       line-height: 1.45;
     }
 
+    /* RECIPROCITY AUDIO GIFT (Walker) */
+    .reciprocity-audio {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 32px;
+      background: linear-gradient(135deg, var(--brand-bg-2) 0%, #fff 100%);
+      border: 1px solid rgba(122, 18, 212, .2);
+      border-radius: 24px;
+      box-shadow: 0 12px 32px -16px rgba(122, 18, 212, .2);
+    }
+    .reciprocity-audio .ra-eyebrow {
+      display: inline-block;
+      font-family: var(--serif);
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--brand);
+      font-weight: 700;
+      background: #fff;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    .reciprocity-audio h3 {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--ink);
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+    .reciprocity-audio audio {
+      width: 100%;
+      margin: 6px 0 12px;
+      border-radius: 999px;
+    }
+    .reciprocity-audio p {
+      font-size: 14px;
+      color: var(--ink-mid);
+      line-height: 1.55;
+      margin: 0;
+    }
+    .reciprocity-audio p em { font-family: var(--italic); color: var(--brand); font-style: italic; }
+
+    /* Date stamp under countdown */
+    .date-stamp {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 12.5px;
+      opacity: .85;
+    }
+    @media (max-width: 600px) {
+      .date-stamp { display: block; margin: 4px 0 0; font-size: 11.5px; }
+    }
+
     /* Featured program (Duality) */
     .program.featured {
       grid-column: span 2;
@@ -1383,6 +1440,7 @@ VALUES TO VERIFY:
        ============================================================ -->
   <div class="warning-bar">
     This page and your special offer expire in <span class="countdown" id="topCountdown">--h --m --s</span>.
+    <span class="date-stamp" id="dateStamp">— closes [date loading]</span>
   </div>
 
   <!-- ============================================================
@@ -1399,18 +1457,18 @@ VALUES TO VERIFY:
             <div class="b-text">
               <div class="b-eyebrow">Your entry program</div>
               <div class="b-title">Duality with Jeffrey Allen</div>
-              <div class="b-meta">+ 20 more programs unlocked · 214h+ curriculum · cancel anytime</div>
+              <div class="b-meta">+ 20 more programs unlocked · 280h+ curriculum · cancel anytime</div>
             </div>
           </div>
           <h1 class="hero-h">Remove obstacles. Attract synchronicities. <em class="purple">With ease.</em></h1>
           <p class="hero-sub">
-            60 minutes was the taste — in 7 weeks, every area of your life (money, relationships, decisions, health) bends to your energy instead of the other way around. The same path took <strong>Mfon</strong> to a 50% income lift and <strong>Haylee</strong> from anxiety 10 → 2. <strong>$100 off the Manifesting Membership</strong>, only on this page.
+            60 minutes was the taste — in 7 weeks, every area of your life (money, relationships, decisions, health) bends to your energy instead of the other way around. The same path took <strong>Mfon, a Texas tax lawyer,</strong> to a 50% income lift — and <strong>Haylee, a working mom of two,</strong> from anxiety 10 → 2. <strong>$100 off the Manifesting Membership</strong>, only on this page.
           </p>
 
           <div class="trust-strip">
             <div class="trust-item"><strong>4.9 / 5</strong> rating</div>
             <div class="trust-item"><strong>1.6M+</strong> students</div>
-            <div class="trust-item"><strong>94%</strong> finish what they start</div>
+            <div class="trust-item"><strong>94%</strong> feel the shift in Week 1</div>
             <div class="trust-item"><strong>15-day</strong> money-back guarantee</div>
           </div>
         </div>
@@ -1428,7 +1486,7 @@ VALUES TO VERIFY:
               <li><span class="item"><strong>Duality</strong> — Jeffrey's full 7-week energy training</span><span class="val">$499</span></li>
               <li><span class="item"><strong>Unlocking Transcendence</strong> — Jeffrey's advanced program</span><span class="val">$499</span></li>
               <li><span class="item">35+ guided meditations inside Duality</span><span class="val">$297</span></li>
-              <li><span class="item"><strong>The Manifesting Membership</strong> — 20+ programs (Donna Eden, Marie Diamond, Vishen, Sadhguru, Burt Goldman, Regan Hillyer + more)</span><span class="val">$10,000+</span></li>
+              <li><span class="item"><strong>The Manifesting Membership</strong> — 33+ programs (Donna Eden, Marie Diamond, Vishen, Sadhguru, Burt Goldman, Regan Hillyer + more)</span><span class="val">$10,000+</span></li>
               <li><span class="item">200+ hours of world-class curriculum</span><span class="val">included</span></li>
               <li><span class="item"><strong>EVE</strong> — your AI personal-growth guide</span><span class="val">$500/yr</span></li>
               <li><span class="item">Live community + monthly events</span><span class="val">$1,200</span></li>
@@ -1436,7 +1494,10 @@ VALUES TO VERIFY:
             </ul>
 
             <div class="totals">
-              <div class="total-was">Total real value: $7,995+</div>
+              <div style="font-size: 12.5px; color: var(--ink-soft); margin-bottom: 10px; padding: 10px 12px; background: var(--brand-bg); border-radius: 8px; line-height: 1.45;">
+                <strong style="color: var(--brand);">In-person equivalent:</strong> $4,000–$5,000 to train with Jeffrey at a retreat in Tokyo. <em>(Vishen's words on the masterclass.)</em>
+              </div>
+              <div class="total-was">Total real value: $12,995+</div>
               <div class="total-now"><span class="currency">$</span><span class="num">199</span><span style="font-size: .35em; color: var(--ink-dim); font-family: var(--sans); margin-left: 6px; letter-spacing: 0;">/ year</span></div>
               <div class="total-pay">or <strong>$49 / month</strong> — both renew automatically · cancel anytime</div>
               <div style="font-size: 12px; color: var(--ink-dim); margin-top: 10px; line-height: 1.45;">
@@ -1462,8 +1523,42 @@ VALUES TO VERIFY:
   <section class="takeaway">
     <div class="container">
       <div class="takeaway-card">
-        <span class="quote-mark">"</span><p>You don't have to make up your mind right now. You just have to say <em>maybe</em>. Try it for 15 days. If even the opening soundtrack isn't for you, one click and your money's back."</p>
-        <cite>— Vishen Lakhiani, on the masterclass you just watched</cite>
+        <span class="quote-mark">"</span><p>You don't have to make up your mind right now. You just have to say <em>maybe</em>. Try it for 15 days. If even the first 20 minutes don't land, one click and your money's back."</p>
+        <cite>— Vishen Lakhiani, from the live training</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3.1 RECIPROCITY GIFT — 60-sec Jeffrey audio (Walker)
+       ============================================================ -->
+  <section class="section" style="padding: 48px 0;">
+    <div class="container">
+      <div class="reciprocity-audio">
+        <span class="ra-eyebrow">Try it now — 60 seconds, free</span>
+        <h3>Press play. Jeffrey walks you through the Higher Mind technique.</h3>
+        <!-- TODO: replace the src below with the real Jeffrey 60-sec audio file -->
+        <audio controls preload="none">
+          <source src="../shared/jeffrey-higher-mind-60s.mp3" type="audio/mpeg">
+          Your browser doesn't support audio playback. <a href="../shared/jeffrey-higher-mind-60s.mp3">Download the audio</a>.
+        </audio>
+        <p>Most students feel the shift before the audio finishes. <em>This is what every Week 1 lesson feels like.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3.15 JEFFREY'S ORIGIN STORY (Kern)
+       ============================================================ -->
+  <section class="section" style="padding: 64px 0 0;">
+    <div class="container">
+      <div style="max-width: 880px; margin: 0 auto; display: grid; grid-template-columns: 220px 1fr; gap: 36px; align-items: center;">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/700x760/4314cdd654/du_sp_author-m.jpg?quality=85&auto=webp" alt="Jeffrey Allen" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 18px; box-shadow: 0 16px 40px -16px rgba(15, 19, 26, .25);">
+        <div>
+          <span class="eyebrow" style="display: inline-block; margin-bottom: 12px;">Who's teaching you</span>
+          <h2 class="h3" style="margin-bottom: 14px; font-size: 26px;">Jeffrey was a software engineer at the U.S. Department of Energy when this all started.</h2>
+          <p style="font-size: 16px; color: var(--ink-mid); line-height: 1.65;">Out of nowhere, he started having experiences he couldn't explain — seeing energy around people, knowing things he couldn't possibly know, influencing outcomes without acting. The scientist in him couldn't dismiss it. So he trained: clairvoyance, healing apprenticeships, trance-mediumship, clairvoyant teacher training — for 15 years. Then he reverse-engineered all of it into something <strong style="color: var(--ink);">an ordinary working adult can actually run.</strong></p>
+        </div>
       </div>
     </div>
   </section>
@@ -1511,7 +1606,7 @@ VALUES TO VERIFY:
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Inside Duality</span>
-        <h2 class="h2">What 7 weeks with Jeffrey <em class="italic">actually does to you.</em></h2>
+        <h2 class="h2">First shift inside Week 1. <em class="italic">Permanent rewiring by the end.</em></h2>
         <p class="lede">20 minutes a day. The same arc that's taken 1.6M people from <em class="italic">"I'm not sure I believe this"</em> to <em class="italic">"I can't believe I lived without this."</em></p>
       </div>
 
@@ -1569,9 +1664,9 @@ VALUES TO VERIFY:
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Inside your Manifesting Pathway</span>
+        <span class="eyebrow">Inside your Manifesting Membership</span>
         <h2 class="h2">Duality is just the start. <em class="italic">Here's everything else that unlocks.</em></h2>
-        <p class="lede">A curated arc of the world's leading manifesting teachers — 20+ programs, 214+ hours, all designed to deepen what Jeffrey starts. Donna Eden, Marie Diamond, Vishen, Sadhguru, Burt Goldman, Regan Hillyer, and more.</p>
+        <p class="lede">A curated arc of the world's leading manifesting teachers — 33+ programs, 280+ hours, all designed to deepen what Jeffrey starts. Donna Eden, Marie Diamond, Vishen, Sadhguru, Burt Goldman, Regan Hillyer, and more.</p>
       </div>
 
       <div class="pathway-grid">
@@ -1689,7 +1784,7 @@ VALUES TO VERIFY:
       </div>
 
       <p class="text-center mt-32 body-sm">
-        20+ programs · 214+ hours · Plus rotating bonus programs added throughout the year.
+        33+ programs · 280+ hours · Plus rotating bonus programs added throughout the year.
       </p>
     </div>
   </section>
@@ -1701,8 +1796,8 @@ VALUES TO VERIFY:
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">The compound effect</span>
-        <h2 class="h2">12 months from now, <em class="italic">you're unrecognisable.</em></h2>
-        <p class="lede">You don't <em class="italic">finish</em> the Manifesting Membership. You become it. Here's what compounds when Duality meets Energy Medicine meets Silva Ultramind meets the daily practice.</p>
+        <h2 class="h2">3 months from now, <em class="italic">you're unrecognisable.</em></h2>
+        <p class="lede">You don't <em class="italic">finish</em> the Manifesting Membership. You become it. Here's what compounds when Duality meets Energy Medicine meets Silva Ultramind meets the daily practice. <strong>And 12 months from now, you'll wonder who that earlier version even was.</strong></p>
       </div>
 
       <div class="tx-grid">
@@ -1715,7 +1810,7 @@ VALUES TO VERIFY:
         <article class="tx-card">
           <div class="tx-area">Nervous system regulated</div>
           <h4>The anxiety quiets.</h4>
-          <p>Your body stops being braced for impact 24/7. The fear-loop in your chest gets quiet. Sleep deepens. The fears that crept in for years have nowhere to live anymore. <strong>Haylee's anxiety dropped from 10 → 2 in 6 weeks. You're 12 months in.</strong></p>
+          <p>Your body stops being braced for impact 24/7. The fear-loop in your chest gets quiet. Sleep deepens. The fears that crept in for years have nowhere to live anymore. <strong>Haylee's anxiety dropped from 10 → 2 in 6 weeks. You're 3 months in.</strong></p>
         </article>
 
         <article class="tx-card">
@@ -1744,7 +1839,7 @@ VALUES TO VERIFY:
       </div>
 
       <div class="tx-closer">
-        <p>This isn't 7 weeks of a course. It's <em>12 months of becoming.</em> The membership is the price of admission. The transformation is what happens between the lessons.</p>
+        <p>This isn't 7 weeks of a course. It's <em>a daily practice that compounds.</em> The pathway is the price of admission. The transformation is what happens between the lessons.</p>
       </div>
     </div>
   </section>
@@ -1878,7 +1973,7 @@ VALUES TO VERIFY:
           <li>You felt something during the masterclass. <strong>That signal fades within 48 hours if you don't act on it.</strong></li>
           <li><strong>15 days, one-click refund.</strong> The only thing you're really risking is the 60 seconds it takes to sign up.</li>
           <li><strong>Mfon: 50% income lift in 4 months. Haylee: anxiety from a 10 to a 2 in 6 weeks.</strong> Their clock started when they joined — not when they decided.</li>
-          <li><strong>One subscription unlocks the entire Manifesting Pathway</strong> — every program designed to deepen what Jeffrey starts.</li>
+          <li><strong>One subscription unlocks the entire Manifesting Membership</strong> — every program designed to deepen what Jeffrey starts.</li>
         </ol>
       </div>
     </div>
@@ -1902,16 +1997,29 @@ VALUES TO VERIFY:
             <div class="plan-was">Was $299</div>
             <div class="plan-price">$199 <span class="per">/ year</span></div>
             <div class="plan-meta">~$17/mo equivalent · save $389 vs monthly · auto-renews yearly</div>
-            <div class="plan-includes">Manifesting Membership · Duality + Unlocking Transcendence + 20+ more programs · 214h+ of curriculum · EVE · community</div>
-            <a href="#" data-plan="annual" class="cta-orange">Join Annual — $199</a>
+            <div class="plan-includes">Manifesting Membership · Duality + Unlocking Transcendence + 33+ more programs · 280h+ of curriculum · EVE · community</div>
+
+            <div class="order-bump">
+              <label>
+                <input type="checkbox" id="bump-jeffrey-1on1">
+                <div class="bump-text">
+                  <div class="bump-title">YES — add a private <strong>1-on-1 session with Jeffrey</strong> for $97 (normally $497)</div>
+                  <div class="bump-meta">One 45-min session, only available with this purchase. Use it any time in your first 6 months — for a personal energy reading, a stuck question, or to go deeper on any technique.</div>
+                </div>
+              </label>
+            </div>
+
+            <!-- TODO: replace # with real Stripe checkout URL for the annual plan -->
+            <a href="#order" data-plan="annual" class="cta-orange">Join Annual — $199</a>
           </div>
           <div class="plan">
             <div class="plan-name">Monthly</div>
             <div class="plan-was">&nbsp;</div>
             <div class="plan-price">$49 <span class="per">/ month</span></div>
             <div class="plan-meta">Cancel anytime · same pathway</div>
-            <div class="plan-includes">Manifesting Membership · Duality + Unlocking Transcendence + 20+ more programs · 214h+ of curriculum · EVE · community</div>
-            <a href="#" data-plan="monthly" class="cta-secondary">Join Monthly — $49/mo</a>
+            <div class="plan-includes">Manifesting Membership · Duality + Unlocking Transcendence + 33+ more programs · 280h+ of curriculum · EVE · community</div>
+            <!-- TODO: replace # with real Stripe checkout URL for the monthly plan -->
+            <a href="#order" data-plan="monthly" class="cta-secondary">Join Monthly — $49/mo</a>
           </div>
         </div>
 
@@ -1957,12 +2065,12 @@ VALUES TO VERIFY:
 
       <div class="faq-list">
         <details class="faq-item">
-          <summary>How does the Manifesting Pathway work?</summary>
-          <p>It's a subscription (annual or monthly) that unlocks the Manifesting Membership — Duality + Unlocking Transcendence (both Jeffrey Allen) plus 20+ more programs from teachers like Donna Eden, Marie Diamond, Vishen, Sadhguru, Burt Goldman, and Regan Hillyer. 214+ hours of curriculum, picked because they all deepen the same outcome. Watch on web, iOS, Android, Apple TV.</p>
+          <summary>How does the Manifesting Membership work?</summary>
+          <p>It's a subscription (annual or monthly) that unlocks the Manifesting Membership — Duality + Unlocking Transcendence (both Jeffrey Allen) plus 33+ more programs from teachers like Donna Eden, Marie Diamond, Vishen, Sadhguru, Burt Goldman, and Regan Hillyer. 280+ hours of curriculum, picked because they all deepen the same outcome. Watch on web, iOS, Android, Apple TV.</p>
         </details>
         <details class="faq-item">
-          <summary>What programs come with the Manifesting Pathway?</summary>
-          <p>20+ programs in total. Duality + Unlocking Transcendence (both Jeffrey Allen). Plus The Art of Manifesting (Regan Hillyer), Energy Medicine (Donna Eden), Feng Shui for Life (Marie Diamond), The Silva Ultramind System (Vishen), A Yogi's Guide to Joy (Sadhguru), Quantum Jumping (Burt Goldman), Chakra Healing (Anodea Judith), Higher Self Activation (Ariya Lorenz), Breathwork for Life (Niraj Naik), Speaking with Spirit (Agapi Stassinopoulos), and more. 214+ hours of curriculum, all curated around one outcome: living manifesting as a daily practice.</p>
+          <summary>What programs come with the Manifesting Membership?</summary>
+          <p>33+ programs in total. Duality + Unlocking Transcendence (both Jeffrey Allen). Plus The Art of Manifesting (Regan Hillyer), Energy Medicine (Donna Eden), Feng Shui for Life (Marie Diamond), The Silva Ultramind System (Vishen), A Yogi's Guide to Joy (Sadhguru), Quantum Jumping (Burt Goldman), Chakra Healing (Anodea Judith), Higher Self Activation (Ariya Lorenz), Breathwork for Life (Niraj Naik), Speaking with Spirit (Agapi Stassinopoulos), and more. 280+ hours of curriculum, all curated around one outcome: living manifesting as a daily practice.</p>
         </details>
         <details class="faq-item">
           <summary>How does the refund actually work?</summary>
@@ -1970,7 +2078,7 @@ VALUES TO VERIFY:
         </details>
         <details class="faq-item">
           <summary>How long do I have access?</summary>
-          <p>As long as your membership is active. Renew yearly (or monthly) and your full Manifesting Pathway — including new programs added throughout the year — stays unlocked.</p>
+          <p>As long as your membership is active. Renew yearly (or monthly) and your full Manifesting Membership — including new programs added throughout the year — stays unlocked.</p>
         </details>
       </div>
     </div>
@@ -2014,9 +2122,17 @@ VALUES TO VERIFY:
 
   <script>
     // ============================================================
-    // 12-hour PAGE-EXPIRY countdown (the discount itself is available longer; this drop-down view expires)
+    // 12-hour PAGE-EXPIRY countdown — sticky per visitor via localStorage
+    // (reloading the page doesn't reset the timer; once it expires for a visitor, it stays expired)
+    // In production: replace localStorage with server-side cohort timestamp.
     // ============================================================
-    const CART_CLOSE_AT = new Date(Date.now() + 12 * 60 * 60 * 1000);
+    const STORAGE_KEY = 'mvManifestingCartCloseAt';
+    let storedClose = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
+    if (!storedClose || storedClose < Date.now() - 7 * 24 * 60 * 60 * 1000) {
+      storedClose = Date.now() + 12 * 60 * 60 * 1000;
+      localStorage.setItem(STORAGE_KEY, String(storedClose));
+    }
+    const CART_CLOSE_AT = new Date(storedClose);
     const pad = n => String(n).padStart(2, '0');
 
     function tick() {
@@ -2033,6 +2149,14 @@ VALUES TO VERIFY:
       }
       document.querySelectorAll('#topCountdown,#bottomCountdown').forEach(el => el.textContent = display);
     }
+
+    // Hardcoded date stamp (Walker — replace relative time with absolute)
+    const closeStr = CART_CLOSE_AT.toLocaleString('en-US', {
+      weekday: 'long', month: 'short', day: 'numeric',
+      hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+    });
+    const dateEl = document.getElementById('dateStamp');
+    if (dateEl) dateEl.textContent = `— closes ${closeStr}`;
     tick();
     setInterval(tick, 1000);
 
