@@ -533,6 +533,27 @@ VALUES TO VERIFY:
       color: var(--ink-dim);
       letter-spacing: .02em;
     }
+    .program .rating {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 4px;
+      font-size: 11.5px;
+      color: var(--ink-mid);
+    }
+    .program .rating .stars {
+      color: #f5b800;
+      letter-spacing: 1px;
+      font-size: 12px;
+      line-height: 1;
+    }
+    .program .rating .num {
+      color: var(--ink);
+      font-weight: 600;
+      margin-left: 2px;
+    }
+    .program.featured .rating { font-size: 13px; }
+    .program.featured .rating .stars { font-size: 14px; }
     .program-outcome {
       padding: 0 14px 16px;
       font-family: var(--serif);
@@ -1490,7 +1511,7 @@ VALUES TO VERIFY:
               <li><span class="item">200+ hours of world-class curriculum</span><span class="val">included</span></li>
               <li><span class="item"><strong>EVE</strong> — your AI personal-growth guide</span><span class="val">$500/yr</span></li>
               <li><span class="item">Live community + monthly events</span><span class="val">$1,200</span></li>
-              <li><span class="item"><strong>15-day money-back guarantee</strong> — try the entire pathway risk-free</span><span class="val">peace of mind</span></li>
+              <li><span class="item"><strong>15-day money-back guarantee</strong> — try the entire membership risk-free</span><span class="val">peace of mind</span></li>
             </ul>
 
             <div class="totals">
@@ -1677,7 +1698,8 @@ VALUES TO VERIFY:
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/a950168e80/jeffrey-allen-2_3-1.png?quality=75&auto=webp" alt="Jeffrey Allen">
             <div class="meta-text">
               <div class="title">Duality</div>
-              <div class="author">Jeffrey Allen · 49 lessons · 14h 10m · 1.6M students</div>
+              <div class="author">Jeffrey Allen · 49 lessons · 14h 10m</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.9</span> · 1.6M students</div>
             </div>
           </div>
           <div class="program-outcome">Read your own energy. Clear blocks holding you back. Trust your intuition like a sixth sense.</div>
@@ -1687,7 +1709,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/7383773700/the-art-of-manifesting.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/8807b8cec0/regan-hillyer-2_3-2.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">The Art of Manifesting</div><div class="author">Regan Hillyer · Most Popular 2024</div></div>
+            <div class="meta-text">
+              <div class="title">The Art of Manifesting</div>
+              <div class="author">Regan Hillyer · Most Popular 2024</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.9</span></div>
+            </div>
           </div>
           <div class="program-outcome">Manifest the life you've been visualising for years.</div>
         </article>
@@ -1696,7 +1722,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/b8bb8e2f5c/energy-medicine.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/4306fbe4a4/donna-eden-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Energy Medicine</div><div class="author">Donna Eden</div></div>
+            <div class="meta-text">
+              <div class="title">Energy Medicine</div>
+              <div class="author">Donna Eden</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.8</span></div>
+            </div>
           </div>
           <div class="program-outcome">Heal your body using your own energy field. No pills, no doctors.</div>
         </article>
@@ -1705,7 +1735,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/d7d9022991/feng-shui-for-life.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/92e925f194/marie-diamond-2_3-2.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Feng Shui for Life</div><div class="author">Marie Diamond · Secret co-author</div></div>
+            <div class="meta-text">
+              <div class="title">Feng Shui for Life</div>
+              <div class="author">Marie Diamond · Secret co-author</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.7</span></div>
+            </div>
           </div>
           <div class="program-outcome">Reshape your space. Attract wealth, love, and success into your home.</div>
         </article>
@@ -1714,7 +1748,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/0877c41139/the-silva-ultramind-system.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/3f39ed0ddd/vishen-2_3_2.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Silva Ultramind</div><div class="author">Vishen Lakhiani</div></div>
+            <div class="meta-text">
+              <div class="title">Silva Ultramind</div>
+              <div class="author">Vishen Lakhiani</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.9</span></div>
+            </div>
           </div>
           <div class="program-outcome">Master the alpha state. Make decisions like a savant. Manifest at will.</div>
         </article>
@@ -1723,7 +1761,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/d7e8b90d7a/a-yogi-s-guide-to-joy.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/b7e00ed45c/sadhguru-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">A Yogi's Guide to Joy</div><div class="author">Sadhguru</div></div>
+            <div class="meta-text">
+              <div class="title">A Yogi's Guide to Joy</div>
+              <div class="author">Sadhguru</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.8</span></div>
+            </div>
           </div>
           <div class="program-outcome">Sustainable inner peace. No retreat required.</div>
         </article>
@@ -1732,7 +1774,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/954ded0ccd/chakra-healing.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/11fd4771e5/anodea-judith-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Chakra Healing</div><div class="author">Anodea Judith</div></div>
+            <div class="meta-text">
+              <div class="title">Chakra Healing</div>
+              <div class="author">Anodea Judith</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.6</span></div>
+            </div>
           </div>
           <div class="program-outcome">Unblock the 7 energy centers silently running your life.</div>
         </article>
@@ -1741,7 +1787,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/852920211c/ut_questcover_en.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/525e8fc950/jeffrey-allen-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Unlocking Transcendence</div><div class="author">Jeffrey Allen · The advanced sequel</div></div>
+            <div class="meta-text">
+              <div class="title">Unlocking Transcendence</div>
+              <div class="author">Jeffrey Allen · The advanced sequel</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.9</span></div>
+            </div>
           </div>
           <div class="program-outcome">Experience yourself as pure consciousness. The next layer beyond Duality.</div>
         </article>
@@ -1750,7 +1800,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/0dfd749d64/quantum-jumping.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/3b34fc3bdd/burt-goldman-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Quantum Jumping</div><div class="author">Burt Goldman</div></div>
+            <div class="meta-text">
+              <div class="title">Quantum Jumping</div>
+              <div class="author">Burt Goldman</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.5</span></div>
+            </div>
           </div>
           <div class="program-outcome">Connect with parallel-life versions of yourself who already have what you want.</div>
         </article>
@@ -1759,7 +1813,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/a553030324/higher-self-activation.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/6c2ec705fd/ariya-lorenz-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Higher Self Activation</div><div class="author">Ariya Lorenz</div></div>
+            <div class="meta-text">
+              <div class="title">Higher Self Activation</div>
+              <div class="author">Ariya Lorenz</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.7</span></div>
+            </div>
           </div>
           <div class="program-outcome">Wake up the part of you that already knows the answers.</div>
         </article>
@@ -1768,7 +1826,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/c803949384/breathwork-for-life.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/5929d6e241/niraj-naik-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Breathwork for Life</div><div class="author">Niraj Naik</div></div>
+            <div class="meta-text">
+              <div class="title">Breathwork for Life</div>
+              <div class="author">Niraj Naik</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.8</span></div>
+            </div>
           </div>
           <div class="program-outcome">Use your breath to rewire your nervous system and unlock peak states.</div>
         </article>
@@ -1777,7 +1839,11 @@ VALUES TO VERIFY:
           <img class="cover" src="https://storyblok-cdn.mindvalley.com/f/60579/649x365/251918dce9/speakingwithspirit.png?quality=75&auto=webp" alt="">
           <div class="meta">
             <img class="author-chip" src="https://storyblok-cdn.mindvalley.com/f/60579/244x365/d611269133/agapi-stassinopoulos-2_3.png?quality=75&auto=webp" alt="">
-            <div class="meta-text"><div class="title">Speaking with Spirit</div><div class="author">Agapi Stassinopoulos</div></div>
+            <div class="meta-text">
+              <div class="title">Speaking with Spirit</div>
+              <div class="author">Agapi Stassinopoulos</div>
+              <div class="rating"><span class="stars">★★★★★</span> <span class="num">4.6</span></div>
+            </div>
           </div>
           <div class="program-outcome">Connect with departed loved ones. Receive guidance from beyond.</div>
         </article>
@@ -1839,7 +1905,7 @@ VALUES TO VERIFY:
       </div>
 
       <div class="tx-closer">
-        <p>This isn't 7 weeks of a course. It's <em>a daily practice that compounds.</em> The pathway is the price of admission. The transformation is what happens between the lessons.</p>
+        <p>This isn't 7 weeks of a course. It's <em>a daily practice that compounds.</em> The membership is the price of admission. The transformation is what happens between the lessons.</p>
       </div>
     </div>
   </section>
@@ -1986,7 +2052,7 @@ VALUES TO VERIFY:
     <div class="container">
       <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
         <span class="eyebrow">Pick your plan</span>
-        <h2 class="h2" style="margin-left: auto; margin-right: auto;">Two ways in. <em class="italic">Same pathway, same Jeffrey, same guarantee.</em></h2>
+        <h2 class="h2" style="margin-left: auto; margin-right: auto;">Two ways in. <em class="italic">Same membership, same Jeffrey, same guarantee.</em></h2>
       </div>
 
       <div class="order-wrap">
@@ -2016,7 +2082,7 @@ VALUES TO VERIFY:
             <div class="plan-name">Monthly</div>
             <div class="plan-was">&nbsp;</div>
             <div class="plan-price">$49 <span class="per">/ month</span></div>
-            <div class="plan-meta">Cancel anytime · same pathway</div>
+            <div class="plan-meta">Cancel anytime · same membership</div>
             <div class="plan-includes">Manifesting Membership · Duality + Unlocking Transcendence + 33+ more programs · 280h+ of curriculum · EVE · community</div>
             <!-- TODO: replace # with real Stripe checkout URL for the monthly plan -->
             <a href="#order" data-plan="monthly" class="cta-secondary">Join Monthly — $49/mo</a>
@@ -2027,7 +2093,7 @@ VALUES TO VERIFY:
           <img src="https://res.cloudinary.com/mindvalley/image/upload/v1646192801/badges/badge_refund_15days.svg" alt="15-day money-back guarantee">
           <div class="text">
             <h4>Say <em class="italic">maybe.</em> Try it for 15 days. If you're not happy, one click and your money's back.</h4>
-            <p>The entire pathway stays unlocked while you decide. No emails, no phone calls, no hassle.</p>
+            <p>The entire membership stays unlocked while you decide. No emails, no phone calls, no hassle.</p>
           </div>
         </div>
 
